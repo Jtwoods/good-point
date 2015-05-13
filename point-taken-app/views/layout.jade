@@ -1,7 +1,10 @@
-doctype html
+include mixins.jade
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    //+bootswatch("superhero")
+    script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
   body
+    include nav.jade
     block content
